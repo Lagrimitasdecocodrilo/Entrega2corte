@@ -31,6 +31,10 @@ public class ControlCharacter : MonoBehaviour{
             //Transform.position -= Vector3.right * Time.deltaTime;
             transform.eulerAngles -= new Vector3(0, velocidad * Time.deltaTime, 0);
         }
+        //cuando presione la tecla space hago un disparo
+        if (Input.GetKey(KeyCode.Space)) {
+            Instantiate(bala, transform.position, transform.rotation);
+        }
 
     }
 }
