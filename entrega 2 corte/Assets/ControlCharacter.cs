@@ -6,6 +6,8 @@ public class ControlCharacter : MonoBehaviour{
     public GameObject CharacterPrincipal;
     public float velocidad = 20f;
     public GameObject bala;
+    public GameObject activarTrampa;
+    public Rigidbody esfera; 
     // Start is called before the first frame update
     void Start() {
         transform.position = new Vector3 (-3.452276F, 0.1900001F, -3.704882F);
