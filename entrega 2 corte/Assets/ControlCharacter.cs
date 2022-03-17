@@ -5,6 +5,7 @@ using UnityEngine;
 public class ControlCharacter : MonoBehaviour { 
     public GameObject CharacterPrincipal;
     public float velocidad = 20f;
+    public GameObject bala;
     // Start is called before the first frame update
     void Start(){
         
