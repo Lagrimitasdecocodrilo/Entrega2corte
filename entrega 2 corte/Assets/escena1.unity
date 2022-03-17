@@ -328,7 +328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 229826915}
   m_Layer: 0
-  m_Name: Trampas
+  m_Name: Obtaculos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 318511936}
   - component: {fileID: 318511935}
   m_Layer: 0
-  m_Name: trampa (3)
+  m_Name: obstaculos (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -495,7 +495,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318511933}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -658,6 +658,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free_Racing_Car_Carbon
       objectReference: {fileID: 0}
+    - target: {fileID: 1844329927030080, guid: 0f7265637d2c58d49a57253b2879a946, type: 3}
+      propertyPath: m_TagString
+      value: Carro
+      objectReference: {fileID: 0}
     - target: {fileID: 4032801418943270, guid: 0f7265637d2c58d49a57253b2879a946, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -717,7 +721,7 @@ GameObject:
   - component: {fileID: 559642296}
   - component: {fileID: 559642295}
   m_Layer: 0
-  m_Name: trampa (5)
+  m_Name: obstaculos (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -746,7 +750,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559642293}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1299,7 +1303,7 @@ GameObject:
   - component: {fileID: 1145346407}
   - component: {fileID: 1145346406}
   m_Layer: 0
-  m_Name: trampa (6)
+  m_Name: obstaculos (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1328,7 +1332,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1145346404}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1396,7 +1400,7 @@ GameObject:
   - component: {fileID: 1171011183}
   - component: {fileID: 1171011182}
   m_Layer: 0
-  m_Name: trampa (4)
+  m_Name: obstaculos (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1425,7 +1429,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171011180}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1706,7 +1710,7 @@ GameObject:
   - component: {fileID: 1481891872}
   - component: {fileID: 1481891871}
   m_Layer: 0
-  m_Name: trampa (2)
+  m_Name: obstaculos (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1735,7 +1739,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481891869}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2177,9 +2181,10 @@ GameObject:
   - component: {fileID: 1719948206}
   - component: {fileID: 1719948205}
   - component: {fileID: 1719948204}
+  - component: {fileID: 1719948207}
   m_Layer: 0
-  m_Name: trampa
-  m_TagString: Untagged
+  m_Name: obstaculo
+  m_TagString: Carro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2207,7 +2212,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719948202}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2262,6 +2267,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719948202}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1719948207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719948202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffc415dc4ec8d4f749c5a275dcf5f3e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activarTrampa: {fileID: 1719948202}
+  rock: {fileID: 0}
 --- !u!1 &1766532905
 GameObject:
   m_ObjectHideFlags: 0
@@ -2663,7 +2682,7 @@ GameObject:
   - component: {fileID: 1890535410}
   - component: {fileID: 1890535409}
   m_Layer: 0
-  m_Name: trampa (1)
+  m_Name: obstaculos (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2692,7 +2711,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890535407}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
