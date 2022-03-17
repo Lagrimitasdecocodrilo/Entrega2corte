@@ -660,7 +660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1844329927030080, guid: 0f7265637d2c58d49a57253b2879a946, type: 3}
       propertyPath: m_TagString
-      value: Carro
+      value: Car
       objectReference: {fileID: 0}
     - target: {fileID: 4032801418943270, guid: 0f7265637d2c58d49a57253b2879a946, type: 3}
       propertyPath: m_RootOrder
