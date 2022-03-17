@@ -54,6 +54,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets/ControlCharacter.cs" />
+    <Compile Include="Assets/Bala.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
