@@ -27,7 +27,8 @@ public class ControlCharacter : MonoBehaviour {
         }
         //cuando presione la tecla LEFT
         if (Input.GetKey(KeyCode.LeftArrow)){
-            Transform.position -= Vector3.right * Time.deltaTime;
+            //Transform.position -= Vector3.right * Time.deltaTime;
+            transform.eulerAngles -= new Vector3(0, velocidad * Time.deltaTime, 0);
         }
 
     }
